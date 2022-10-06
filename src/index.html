@@ -12,18 +12,37 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+  <body class="bg-success">
+    <form id="formulario" class="bg-white w-75 m-2">
+      <div class="p-3">
+        <h1>Clasificador de Cartas</h1>
+        <h3>
+          Obten una mano aleatoria de cartas y mira como se ordenan en segundos
+        </h3>
+        <label class="form-label"
+          >Ingrese el número de tarjetas que desea:</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Elija un número del 1 al 10"
+          min="1"
+          max="10"
+        />
+        <button type="submit" class="btn btn-secondary mt-2">
+          Aceptar
+        </button>
+        <button type="button" class="btn btn-secondary mt-2" id="ordenar">
+          Ordenar
+        </button>
       </div>
-    </div>
+    </form>
+
+    <div id="container" class="d-flex flex-wrap"></div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
